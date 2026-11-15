@@ -1,0 +1,47 @@
+Actúa como un desarrollador web experto, diseñador UI/UX y profesor de física y química. Crea una aplicación web educativa interactiva completa en un único archivo (HTML, CSS y JavaScript integrados, totalmente autocontenido), con un diseño moderno, minimalista y profesional en modo oscuro (fondos oscuros, acentos llamativos, tipografía limpia).
+
+La aplicación debe estructurarse en **tres secciones o pestañas principales** accesibles mediante un menú de navegación superior:
+
+---
+
+### PESTAÑA 1: Teoría Cinética y Estados de la Materia
+1. **Explicación teórica inicial:** Breve introducción intuitiva a la teoría cinético-molecular.
+2. **Simulación visual en Canvas:** Un recipiente interactivo que demuestre los tres estados de la materia mediante la disposición y agitación de las partículas (con un selector para cambiar de estado):
+   - **Sólido:** Partículas ordenadas en red cristalina vibrando en posiciones fijas.
+   - **Líquido:** Partículas juntas pero desordenadas, fluyendo unas sobre otras.
+   - **Gas:** Partículas muy separadas, moviéndose a alta velocidad en todas las direcciones.
+3. **Métricas en tiempo real:** Panel de control/métricas que muestre:
+   - Conteo exacto del número de colisiones de las partículas contra las paredes por segundo.
+   - Velocidad media de las partículas (vinculada a la temperatura del sistema).
+
+---
+
+### PESTAÑA 2: Las Tres Leyes de los Gases (Simulador con Émbolo)
+1. **Selector de Leyes:** Permitir alternar entre las tres leyes fundamentales:
+   - **Ley de Boyle** (Temperatura constante / Isotermo): Modificar el volumen mediante un émbolo deslizante y observar cómo cambia la presión y la frecuencia de colisión.
+   - **Ley de Charles** (Presión constante / Isóbaro): Modificar la temperatura con un control deslizante y ver cómo el volumen (el émbolo) se expande o contrae automáticamente.
+   - **Ley de Gay-Lussac** (Volumen constante / Isócoro): Modificar la temperatura en un recipiente rígido y observar el incremento de presión y velocidad de impacto de las partículas.
+2. **Controles deslizantes y unidades reales:** 
+   - Los controles deben ser suaves y responsivos.
+   - **Importante:** El volumen regulable del recipiente **no debe mostrarse en porcentajes (%)**, sino en **cifras y unidades físicas concretas** (por ejemplo, en Litros, como un rango de $1.0\text{ L}$ a $5.0\text{ L}$).
+   - Lecturas en tiempo real con sus unidades correspondientes para Presión ($\text{atm}$ o $\text{kPa}$), Volumen ($\text{L}$) y Temperatura ($\text{K}$).
+
+---
+
+### PESTAÑA 3: Cambios de Estado del Agua
+1. **Simulación térmica del agua:** Un diagrama o recipiente interactivo que permita variar la temperatura del agua (desde -20 °C hasta +120 °C).
+2. **Visualización de fases:** 
+   - Hielo / Sólido (< 0 °C)
+   - Transición / Fusión (0 °C)
+   - Agua líquida (entre 0 °C y 100 °C)
+   - Transición / Vaporización (100 °C)
+   - Vapor de agua / Gas (> 100 °C)
+3. **Representación visual y gráfica:** Mostrar cómo cambia el empaquetamiento molecular y las fuerzas intermoleculares al calentar o enfriar el sistema de forma continua.
+
+---
+
+### Requisitos Técnicos:
+- Código limpio, bien comentado y estructurado dentro de un único archivo `index.html`.
+- Animaciones fluidas usando `requestAnimationFrame` y el elemento `<canvas>` de HTML5.
+- Estilos CSS modernos (flexbox/grid, efectos de desenfoque/glassmorphism sutil, bordes redondeados).
+- Diseñado para abrirse directamente en cualquier navegador o subirse sin complicaciones a GitHub Pages.
